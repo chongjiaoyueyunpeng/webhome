@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户注册</title>
+	</head>
+    <style  type="text/css">
+          * {
+	        margin: 0;
+	        padding: 0;}
+		body{
+	      background:url(imge/zhuce.png) no-repeat center;
+	      background-size: 100% 100%;
+		}
+    </style>
+	<body style="text-align:center">
+
+	   <script type="text/javascript">
+
+       window.onload=function(){
+
+            var btn1=document.getElementById("btn1").onclick=function(){
+            window.open("shouye.html",'top');
+            }
+
+           var btn22=document.getElementById("btn22").onclick=function(){
+                   alert("注册成功！！！")
+           }
+            
+
+       }
+     
+      
+    </script>
+
+		<table style="text-align:center">
+            <center><h1>用户注册信息表</h1></center>
+            <br><br>
+		<hr>
+        <br><br>
+			用户名:
+			<input type="text" name="username" id="p1"/>
+			<br><br>
+			密  码:
+			<input type="password" name="userpwd" id="p2"/>
+			<br><br>
+			确认密码:
+			<input type="password" id="p3"/>
+			<br><br>
+			性别:
+			<input type="radio" name="gender" value="1" id="p4" />男
+			<input type="radio" name="gender" value="0" checked id="p5"/>女 <!--单选按钮的value必须手动指定-->
+			<br><br>
+			兴趣爱好:
+			<input type="checkbox" name="interest" value="smoke" id="p6"/>篮球
+			<input type="checkbox" name="interest" value="drink" id="p7"checked/>游泳
+			<input type="checkbox" name="interest" value="fireHair"id="p8" checked/>武术
+            <input type="checkbox" name="interest" value="qita" id="p9"/>其它
+			<br><br>
+			学历
+			<select name="grade" id="p10">
+				<option value="gz">高中</option>
+				<option value="dz">大专</option>
+				<option value="bk" selected>本科</option> <!--默认选中-->
+				<option value="ss">硕士</option>
+			</select>
+			<br><br>
+			简介 <!--文本域，文本域没有value属性，用户填写的内容就是value-->
+			<textarea rows="10" cols="60" name="introduce"></textarea>
+			<br><br>
+			<span> <input type="button" id="btn22" value="注册" > </span>
+			<span><input type="button" value="清空" >  </span>
+            <span><input type="button" id="btn1" value="点击直接进入主界面">  </span>
+            <div style="color: red;">提示：可以点击“直接进入主界面”按钮直接进入！</div>
+
+		</table>
+        
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+	</body>
+</html>

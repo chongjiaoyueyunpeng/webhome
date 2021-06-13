@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>用户登录</title>
+    </head>
+    <body style="text-align:center">
+        <br>   <br>   <br>   
+        <style  type="text/css">
+            * {
+              margin: 0;
+              padding: 0;}
+          body{
+            background:url(imge/denglu.png) no-repeat center;
+            background-size: 100% 100%;
+          }
+      </style>
+        <script type="text/javascript">
+        //清空按钮
+        window.onload=function(){
+            var btn5=document.getElementById("btn5");
+            btn5.onclick=function(){
+                  var input1=document.getElementById("input1");
+                  input1.value="";
+
+                  var input2=document.getElementById("input2");
+                  input2.value="";
+
+                  var input3=document.getElementById("input3");
+                  input3.value="";
+            }
+
+            var btn4=document.getElementById("btn4").onclick=function(){
+                var input1=document.getElementById("input1");
+                 var input2=document.getElementById("input2");
+                  var input3=document.getElementById("input3");
+                  if(input2.value!=input3.value)
+                  {
+                      alert("两次密码不匹配！！！");
+                      input2.value="";
+                      input3.value="";
+                  }
+                  if(input2.value==123&input1.value=="admin")
+                  {
+                    //window.location.href = "shouye.html";
+                    window.open("shouye.html",'top');
+                  }
+                  else{
+                      alert("账号或密码错误！！！")
+                  }
+                  
+            }
+            var btn6=document.getElementById("btn6").onclick=function(){
+                window.location.href = "shouye.html";
+            }
+            var btn7=document.getElementById("btn7").onclick=function(){
+                //window.location.href = "zhuce.html";
+                window.open("zhuce.html",'top');
+            }
+        }
+        </script>
+        <center><h1>用户登录表</h1></center>
+        <br><br>
+    
+        <input type="button" id="btn1" value="用户名">
+        <input type="text" id="input1">
+        <br><br>
+        <input type="button" id="btn2" value="密  码">
+        <input type="password" id="input2">
+        <br><br>
+        <input type="button" id="btn3" value="确认密码">
+        <input type="password" id="input3">
+        <br><br>
+        <span><input type="button" id="btn4" value="登录"></span>
+        <span><input type="button" id="btn5" value="清空"></span>
+        <span><input type="button" id="btn6" value="游客登陆" ></span>
+        <span><input type="button" id="btn7" value="注册"></span>
+        <br>
+        <span style="color: brown; size: 150px;">提示1：可以点击“游客登陆”按钮直接进入!!!</span>
+        <div style="color: brown; size: 150px;">提示2：用户名为：admin，密码为：123！！！ </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
